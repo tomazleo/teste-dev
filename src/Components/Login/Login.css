@@ -1,0 +1,130 @@
+  .container {
+      display: flex;
+      width: 790px;
+      height: 500px;
+      background-color: #fff;
+      border: 7px solid #fff;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .dados {
+      display: inline-block;
+      padding: 50px;
+      flex: 1;
+      width: 52%;
+  }
+
+  .jovem-pc {
+      padding: 55px;
+      height: 100%;
+      width: 48%;
+      display: inline-block;
+      background-color: #c34a1d;
+      border-radius: 25px;
+  }
+
+  .input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding-left: 15px;
+  }
+
+  .enviar {
+      width: 100%;
+      background-color: #c34a1d;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+  }
+
+  h1 {
+      color: #c34a1d;
+      font-size: 24px;
+      margin-bottom: 5px;
+  }
+
+  p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 30px;
+  }
+
+  .input-name {
+      color: #c34a1d;
+      font-size: 15px;
+      margin-bottom: 5px;
+  }
+
+  .junto {
+      position: relative;
+  }
+
+  .olhos {
+      position: absolute;
+      top: 35%;
+      right: 15px;
+      transform: translateY(-51%);
+      cursor: pointer;
+      color: #c34a1d;
+      font-size: 24px;
+  }
+
+  .logo {
+      position: absolute;
+      top: 21%;
+      right: 64%;
+      font-size: 24px;
+  }
+
+  .menino {
+      position: relative;
+      top: 30%;
+      right: 35%;
+
+  }
+  
+  @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .dados {
+    width: 100%;
+    padding: 30px;
+    order: 1;
+  }
+
+  .jovem-pc {
+    width: 100%;
+    padding: 30px;
+    order: 2;
+    border-radius: 0 0 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    position: static;
+    width: 100px;
+    margin-bottom: 30px;
+  }
+
+  .menino {
+    position: static;
+    max-width: 100%;
+    height: auto;
+  }
+}
